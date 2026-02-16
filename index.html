@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwiftCart</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awsome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Tailwind and Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./assests/trolley.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar px-10">
+      <div class="navbar-start">
+        <button class=" font-extrabold text-blue-500 text-2xl">SwiftCart</button>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a href="./allproduct.html">Products</a></li>
+          <li><a>About</a></li>
+          <li><a>Contacts</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end space-x-3">
+        <button class="text-2xl"><i class="fa-solid fa-cart-arrow-down"></i></button>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="-1" class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 text-white shadow">
+            <li><a>Home</a></li>
+            <li><a>Products</a></li>
+            <li><a>About</a></li>
+            <li><a>Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main>
+    <section class="h-[420px] bg-[url('../assests/banner-image.png')] bg-cover bg-center relative">
+
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <div class="h-full flex justify-center items-center relative md:w-8/12 md:mx-auto">
+        <div class="  px-4">
+          <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">Best Collection For You</h1>
+          <p class="text-sm md:text-base text-white mb-6">
+            Discover our exclusive range of products carefully selected for quality and style. From trendy fashion to
+            essential accessories, find everything you need to elevate your lifestyle and enjoy the best shopping
+            experience.
+          </p>
+          <button class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-gray-200 transition">
+            Shop Now
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Why Choose Us Section -->
+
+    <section class="bg-slate-100">
+
+      <div class="w-10/12 mx-auto py-10 space-y-5">
+        <h1 class="text-4xl font-extrabold text-center">Why Choose Us</h1>
+        <p class="text-center text-slate-500 mt-3">We provide best the best shopping experience with top-notch services
+        </p>
+
+        <div class="mt-15 flex flex-col lg:flex-row justify-between  gap-15 lg:gap-10">
+          <div class="p-7 rounded-md bg-white space-y-2 relative"> <i
+              class="fa-solid fa-car text-6xl absolute left-6  -top-10 border-slate-400 border-2 rounded-lg text-blue-500 "></i>
+            <h1 class="font-bold mt-5">Fast Delivery</h1>
+            <p>Get your orders quickly with our reliable, safe, and super fast shipping service.</p>
+
+
+          </div>
+          <div class="p-5 rounded-md bg-white space-y-2 relative"><i
+              class="fa-solid fa-headphones text-6xl absolute left-6 -top-10 border-slate-400 border-2 rounded-lg text-blue-500 "></i>
+            <h1 class="font-bold mt-5">24/7 Suppot</h1>
+            <p>Our friendly support team is available anytime to assist your questions and needs.</p>
+          </div>
+          <div class="p-5 rounded-md bg-white space-y- relative"><i
+              class="fa-brands fa-amazon-pay text-6xl absolute left-6 -top-10 border-slate-400 border-2 rounded-lg text-blue-500 "></i>
+            <h1 class="font-bold mt-5">Secure Payment</h1>
+            <p>Shop confidently with encrypted payment methods ensuring complete safety and privacy.</p>
+          </div>
+          <div class="p-5 rounded-md bg-white space-y-2 relative"><i
+              class="fa-solid fa-arrows-rotate text-6xl absolute left-6 -top-10 border-slate-400 border-2 rounded-lg text-blue-500 "></i>
+            <h1 class="font-bold mt-5">Easy Returns</h1>
+            Enjoy hassle-free returns with simple process and quick refunds guaranteed every time.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="w-11/12 mx-auto my-10">
+      <div>
+      <h1 class="text-4xl font-extrabold">Trending</h1>
+      </div>
+
+      <div id="tredingContainer" class="grid grid-cols-3 gap-5 mt-10">
+
+      </div>
+    </section>
+
+
+
+
+  </main>
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white">
+
+    <div class="flex gap-5 p-5  flex-col lg:flex-row justify-evenly ">
+      <div class="lg:flex-1">
+        <div class="space-y-2">
+          <h1 class="text-2xl font-bold text-blue-400">SwiftCart</h1>
+          <p>Your one-stop shop for all fashion and lifestyle needs. Quality products,fast delivery,and excellent support</p>
+        </div>
+      </div>
+
+      <div class="lg:flex-1">
+
+        <div class="space-y-2">
+          <h1 class="text-lg">Quick Links</h1>
+
+          <p>Home</p>
+          <p>Products</p>
+          <p>About</p>
+          <p>Contacts</p>
+        </div>
+
+      </div>
+
+      <div class="lg:flex-1">
+
+        <div class="space-y-2">
+          <h1 class="text-lg">Support</h1>
+          <p>FAQ</p>
+          <p>Shipping</p>
+          <p>Returns</p>
+          <p>Privacy-Policy</p>
+        </div>
+
+      </div>
+
+      <div class="lg:flex-1 space-y-2">
+        <div class="space-y-2">
+          <h1 class="text-lg">Subscribe to Our Newsletter</h1>
+          <p>The Latest news,articles,and resouces,sent to your inbox weekly</p>
+        </div>
+        <div class="flex gap-2">
+          <input type="text" placeholder="Enter Your Email" class="input text-black" />
+             <button class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-gray-200 transition">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+     <div class=" p-5 flex flex-col lg:flex-row lg:justify-between">
+      <div>
+        <p>&copy; 2025 Swiftcat Inc, All Rights Reserved</p>
+      </div>
+
+      <div class="space-x-2 text-lg">
+        <i class="fa-brands fa-facebook"></i>
+   
+        <i class="fa-brands fa-twitter"></i>
+       <i class="fa-brands fa-square-instagram"></i>
+       <i class="fa-brands fa-linkedin"></i>
+       <i class="fa-solid fa-inbox"></i>
+
+      </div>
+     </div>
+
+  </footer>
+
+  <!-- You can open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_4" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+  <!-- script file link -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
