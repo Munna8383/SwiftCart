@@ -92,7 +92,39 @@ const showDetails =async(id)=>{
   const data =await fetch(url)
   const details =await data.json()
 
-  console.log(details)
+
+  showproductDetails(details)
+}
+
+const showproductDetails = (data)=>{
+   const deatilsBox = document.getElementById("detailsContainer")
+   deatilsBox.innerHTML=""
+  
+
+   console.log(data)
+ 
+   document.getElementById("my_modal_5").showModal()
+
+   const div = document.createElement("div")
+
+   div.innerHTML = `
+    <div class='space-y-5'>
+     <h1 class='text-lg font-bold'>${data.title}</h1>
+     <p >${data.description}</p>
+     <div class="flex justify-center gap-5">
+        <p class='text-green-800'>Price:${data.price}</p>
+           <p class='text-yellow-800'>Rating:${data.rating.rate}</p>
+     </div>
+     <div class='flex justify-center gap-10'>
+            <button   class='p-1 border-1 border-gray-400 rounded-lg '><span><i class="fa-solid fa-eye mx-2"></i></span>Buy Now</button> 
+            <button class='p-1 border-1 bg-blue-400 border-gray-400 rounded-lg '><span><i class="fa-solid fa-cart-arrow-down mx-2"></i></span>Cart</button> 
+            
+        </div>
+    </div>
+   `
+   deatilsBox.append(div)
+
+
 }
 
 
