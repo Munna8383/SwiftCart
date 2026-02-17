@@ -1,5 +1,10 @@
-body{
-     font-family: "Poppins", sans-serif;
-     max-width: 1500px;
-     margin: auto;
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.active {
+  background-color: blue;
+  color: white;
 }

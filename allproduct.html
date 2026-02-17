@@ -1,101 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>All Products</title>
-        <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awsome Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Tailwind and Daisy UI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./assests/trolley.png" type="image/x-icon">
-</head>
-<body>
-     <header>
-    <div class="navbar px-10">
-      <div class="navbar-start">
-        <button class=" font-extrabold text-blue-500 text-2xl">SwiftCart</button>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a href="./index.html">Home</a></li>
-          <li><a>Products</a></li>
-          <li><a>About</a></li>
-          <li><a>Contacts</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end space-x-3">
-        <button class="text-2xl"><i class="fa-solid fa-cart-arrow-down"></i></button>
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
-          </div>
-          <ul tabindex="-1" class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 text-white shadow">
-            <li><a>Home</a></li>
-            <li><a>Products</a></li>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assests/trolley.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar px-10">
+        <div class="navbar-start">
+          <button class="font-extrabold text-blue-500 text-2xl">
+            SwiftCart
+          </button>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./allproduct.html">Products</a></li>
             <li><a>About</a></li>
             <li><a>Contacts</a></li>
           </ul>
         </div>
+        <div class="navbar-end space-x-3">
+          <button class="text-2xl">
+            <i class="fa-solid fa-cart-arrow-down"></i>
+          </button>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 text-black shadow"
+            >
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./allproduct.html">Products</a></li>
+              <li><a>About</a></li>
+              <li><a>Contacts</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="mt-10 w-11/12 mx-auto">
-    <h1 class="text-4xl font-extrabold text-center">Our Products</h1>
+    <main class="mt-10 w-11/12 mx-auto">
+      <h1 class="text-4xl font-extrabold text-center">Our Products</h1>
 
-    <div class="w-7/12 mt-7 mx-auto flex justify-between">
-        <button class="px-3 py-1 rounded border-2 border-black">
-            All
-          </button>
-        <button class="px-3 py-1 rounded border-2 border-black">
-            Electronics
-          </button>
-        <button class="px-3 py-1 rounded border-2 border-black">
-            Jwellery
-          </button>
-        <button class="px-3 py-1 rounded border-2 border-black">
-            Men's Clothing
-          </button>
-        <button class="px-3 py-1 rounded border-2 border-black">
-           Women's Clothing
-          </button>
-    </div>
+      <div
+        id="categories-container"
+        class="lg:w-6/12 space-y-2 mt-7 mx-auto flex flex-wrap justify-between"
+      ></div>
 
-    <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-5" id="productContainer">
-   
-    </div>
-  </main>
-<!-- Open the modal using ID.showModal() method -->
-<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box">
-    <div id="detailsContainer">
+      <div
+        class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-5"
+        id="productContainer"
+      ></div>
+    </main>
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div id="detailsContainer"></div>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
 
-    </div>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
-
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
